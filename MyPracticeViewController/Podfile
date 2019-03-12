@@ -1,0 +1,13 @@
+target 'MyPracticeViewController' do
+    platform :ios, '7.0'
+    
+    pod 'AFNetworking'
+    pod 'Masonry'
+    pod 'BaiduMapKit' #百度地图SDK
+    pod 'IQKeyboardManager'
+    pod 'MWPhotoBrowser-ModalPics'      # 大图浏览
+    pod 'MJExtension'
+#    pod 'SDCycleScrollView','~> 1.61'   # 广告轮播
+    pod 'YBDictionaryToModel'
+
+end

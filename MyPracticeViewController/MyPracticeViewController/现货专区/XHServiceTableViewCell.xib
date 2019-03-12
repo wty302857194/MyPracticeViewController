@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="identifier" rowHeight="86" id="KGk-i7-Jjw" customClass="XHServiceTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="286" height="86"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="286" height="85.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Pkc-o6-bxM">
+                        <rect key="frame" x="10" y="10" width="87.5" height="65.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="Pkc-o6-bxM" secondAttribute="height" multiplier="4:3" id="Sd6-0t-wRj"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jUa-JQ-Oh3">
+                        <rect key="frame" x="107.5" y="10" width="37.5" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YsD-6i-wjz">
+                        <rect key="frame" x="107" y="57" width="37.5" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Heo-Yx-gq1">
+                        <rect key="frame" x="246" y="45" width="30" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="Heo-Yx-gq1" secondAttribute="height" multiplier="1:1" id="4F0-US-KcH"/>
+                            <constraint firstAttribute="height" constant="30" id="PI6-nt-zce"/>
+                        </constraints>
+                        <state key="normal" title="Button" backgroundImage="default_head"/>
+                        <connections>
+                            <action selector="addCartBtnClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="uDy-fx-Uxu"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Wc-Dh-GiI">
+                        <rect key="frame" x="107.5" y="36" width="33" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="1" green="0.37647058820000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="3"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" red="1" green="0.37647058820000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Pkc-o6-bxM" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="1UT-UT-Z6R"/>
+                    <constraint firstItem="YsD-6i-wjz" firstAttribute="top" secondItem="5Wc-Dh-GiI" secondAttribute="bottom" constant="5" id="32u-Qn-Fdc"/>
+                    <constraint firstAttribute="trailing" secondItem="Heo-Yx-gq1" secondAttribute="trailing" constant="10" id="HbT-2R-PW7"/>
+                    <constraint firstItem="jUa-JQ-Oh3" firstAttribute="leading" secondItem="Pkc-o6-bxM" secondAttribute="trailing" constant="10" id="JK8-qN-c8o"/>
+                    <constraint firstItem="jUa-JQ-Oh3" firstAttribute="top" secondItem="Pkc-o6-bxM" secondAttribute="top" id="R2E-Ru-GBe"/>
+                    <constraint firstItem="5Wc-Dh-GiI" firstAttribute="leading" secondItem="jUa-JQ-Oh3" secondAttribute="leading" id="YjT-pj-11k"/>
+                    <constraint firstItem="Pkc-o6-bxM" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="jaS-7K-R4C"/>
+                    <constraint firstItem="Heo-Yx-gq1" firstAttribute="bottom" secondItem="YsD-6i-wjz" secondAttribute="bottom" id="peR-o7-scm"/>
+                    <constraint firstItem="YsD-6i-wjz" firstAttribute="leading" secondItem="jUa-JQ-Oh3" secondAttribute="leading" id="uVi-sR-fAd"/>
+                    <constraint firstAttribute="bottom" secondItem="Pkc-o6-bxM" secondAttribute="bottom" constant="10" id="w5z-Ob-DDv"/>
+                    <constraint firstItem="YsD-6i-wjz" firstAttribute="bottom" secondItem="Pkc-o6-bxM" secondAttribute="bottom" id="yLa-3w-Rgd"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="cartBtn" destination="Heo-Yx-gq1" id="0qM-Mf-Vrt"/>
+                <outlet property="imgView" destination="Pkc-o6-bxM" id="Vik-ap-QQy"/>
+                <outlet property="priceLab" destination="YsD-6i-wjz" id="kGk-Ws-vPS"/>
+                <outlet property="tagLab" destination="5Wc-Dh-GiI" id="YmP-Hw-CBa"/>
+                <outlet property="titleLab" destination="jUa-JQ-Oh3" id="vol-bu-OQV"/>
+            </connections>
+            <point key="canvasLocation" x="55" y="122"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="default_head" width="192" height="192"/>
+    </resources>
+</document>

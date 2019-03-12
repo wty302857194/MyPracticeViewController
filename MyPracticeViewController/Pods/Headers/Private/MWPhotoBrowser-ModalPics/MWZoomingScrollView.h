@@ -1,0 +1,1 @@
+../../../MWPhotoBrowser-ModalPics/MWPhotoBrowser/Classes/MWZoomingScrollView.h
